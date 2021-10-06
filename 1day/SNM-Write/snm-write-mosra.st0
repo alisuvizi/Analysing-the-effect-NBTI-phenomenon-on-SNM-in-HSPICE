@@ -1,0 +1,71 @@
+***** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******
+ Input File: snm-write-mosra.sp
+ lic:
+ lic: FLEXlm: v10.9.8
+ lic: USER:   Amir Houseen         HOSTNAME: samir
+ lic: HOSTID: "086266dc910a 00ff5638fd5e 005056c00001 005056c00008 0a002700002f d0534931e432 d253493
+ lic: Using FLEXlm license file:
+ lic: 27000@samir
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2019/2019.12
+ lic: NODE LOCKED license on hostid "086266dc910a 00ff5638fd5e 005056c00001 005056c00008 0a002700002
+ lic:
+ init: begin read circuit files,  cpu clock=  2.00E+00
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\behave\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\behave\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\AD\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\XILINX\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\TLINE\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\TI\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\SIGNET\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\PCI\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\LIN_TECH\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\FET\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\DIO\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\COMLINE\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\BURR_BRN\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\BJT\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\behave\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\AD\
+       option post =     2.00
+       option runlvl
+       option list
+       option post
+ init: end read circuit files,  cpu clock=  2.08E+00 peak memory=        46 mb
+ init: begin check errors,  cpu clock=  2.08E+00
+ init: end check errors,  cpu clock=  2.09E+00 peak memory=        46 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  2.09E+00
+       establish matrix -- done,  cpu clock=  2.11E+00 peak memory=        47 mb
+       re-order matrix -- done,  cpu clock=  2.11E+00 peak memory=        47 mb
+ init: end setup matrix,  cpu clock=  2.12E+00 peak memory=        47 mb
+ output: snm-write-mosra.ms0
+ sweep: dc dc0    begin, #sweeps= 128 cpu clock=  2.13E+00
+ sweep: dc dc0    end,  cpu clock=  2.16E+00 peak memory=        47 mb
+ output: snm-write-mosra.tr0
+ sweep: tran tran0    begin, stop_t=  4.00E-06 #sweeps=4001 cpu clock=  2.18E+00
+ tran: time= 4.0000E-07 tot_iter=     348 conv_iter=     138 cpu clock= 2.19E+00
+ tran: time= 8.0000E-07 tot_iter=     676 conv_iter=     270 cpu clock= 2.20E+00
+ tran: time= 1.2000E-06 tot_iter=    1004 conv_iter=     402 cpu clock= 2.21E+00
+ tran: time= 1.6000E-06 tot_iter=    1332 conv_iter=     534 cpu clock= 2.23E+00
+ tran: time= 2.0000E-06 tot_iter=    1660 conv_iter=     666 cpu clock= 2.24E+00
+ tran: time= 2.4000E-06 tot_iter=    1988 conv_iter=     798 cpu clock= 2.25E+00
+ tran: time= 2.8000E-06 tot_iter=    2316 conv_iter=     930 cpu clock= 2.27E+00
+ tran: time= 3.2000E-06 tot_iter=    2644 conv_iter=    1062 cpu clock= 2.28E+00
+ tran: time= 3.6000E-06 tot_iter=    2972 conv_iter=    1194 cpu clock= 2.29E+00
+ tran: time= 4.0000E-06 tot_iter=    3300 conv_iter=    1326 cpu clock= 2.31E+00
+ sweep: tran tran0    end,  cpu clock=  2.31E+00 peak memory=        47 mb
+ output: snm-write-mosra.tr0
+ sweep: tran tran0    begin, stop_t=  4.00E-06 #sweeps=4001 cpu clock=  2.33E+00
+ tran: time= 4.0000E-07 tot_iter=     331 conv_iter=     132 cpu clock= 2.34E+00
+ tran: time= 8.0000E-07 tot_iter=     657 conv_iter=     264 cpu clock= 2.36E+00
+ tran: time= 1.2000E-06 tot_iter=     983 conv_iter=     396 cpu clock= 2.37E+00
+ tran: time= 1.6000E-06 tot_iter=    1309 conv_iter=     528 cpu clock= 2.38E+00
+ tran: time= 2.0000E-06 tot_iter=    1635 conv_iter=     660 cpu clock= 2.40E+00
+ tran: time= 2.4000E-06 tot_iter=    1961 conv_iter=     792 cpu clock= 2.41E+00
+ tran: time= 2.8000E-06 tot_iter=    2287 conv_iter=     924 cpu clock= 2.43E+00
+ tran: time= 3.2000E-06 tot_iter=    2613 conv_iter=    1056 cpu clock= 2.44E+00
+ tran: time= 3.6000E-06 tot_iter=    2939 conv_iter=    1188 cpu clock= 2.46E+00
+ tran: time= 4.0000E-06 tot_iter=    3265 conv_iter=    1320 cpu clock= 2.47E+00
+ sweep: tran tran0    end,  cpu clock=  2.48E+00 peak memory=        47 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)

@@ -1,0 +1,915 @@
+ ****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+  Copyright (C) 2012 Synopsys, Inc. All Rights Reserved.                        
+  Unpublished-rights reserved under US copyright laws.
+  This program is protected by law and is subject to the
+  terms and conditions of the license agreement from Synopsys.
+  Use of this program is your acceptance to be bound by the
+  license agreement. HSPICE is the trademark of Synopsys, Inc.
+  Input File: snm-read-2.sp                                                     
+  Command line options: -i snm-read-2.sp -o snm-read-2.lis
+  lic:  
+  lic: FLEXlm: v10.9.8 
+  lic: USER:   Amir Houseen         HOSTNAME: samir 
+  lic: HOSTID: "086266dc910a 00ff5638fd5e 005056c00001 005056c00008 0a002700002f
+  d0534931e432 d253493
+  lic: Using FLEXlm license file: 
+  lic: 27000@samir 
+  lic: Checkout 1 hspice 
+  lic: License/Maintenance for hspice will expire on 31-dec-2019/2019.12 
+  lic: NODE LOCKED license on hostid "086266dc910a 00ff5638fd5e 005056c00001 005
+ 056c00008 0a002700002
+  lic:   
+ Init: read install configuration file: C:\synopsys\Hspice_G-2012.06-SP1\meta.cfg
+ scientific notation:
+ a=10**-18  f=10**-15  p=10**-12  n=10**-9  u=10**-6
+ m=10**-3   k=10**3    x=10**6    g=10**9 
+
+
+ circuit parameter definitions
+  parameter          =  value 
+
+     0:vdd                                                     = 900.0000m      
+     0:u                                                       =   0.           
+     0:ul                                                      =-636.3961m      
+     0:uh                                                      = 636.3961m      
+     0:bitcap                                                  =   1.0000p      
+     0:maxvd                                                   =   0.           
+     0:snm                                                     =   0.           
+
+
+
+
+ constants  - tnom         kt           vt           gapsi        ni
+            298.15000    4.1163e-21    25.69184m     1.11562    1.2565e+16 
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ *calculate snm
+
+  ******  mos   model parameters tnom=  25.000 temp=  25.000 *****
+ Model Name: nmos  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 1
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 1
+    RGATEMOD = 1
+    PERMOD = 1
+    GEOMOD = 1
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 0
+    VERSION =      4 
+    TOXREF = 7.5e-010 
+    TOXE = 7.5e-010 
+    TOXP = 5e-010 
+    TOXM = 7.5e-010 
+    DTOX = 2.5e-010 
+    EPSROX =    3.9 
+    CDSC =      0 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT =      0 
+    NFACTOR =    2.1 
+    XJ = 1e-008 
+    VSAT = 1.821e+005 
+    A0 =      1 
+    AGS =      0 
+    A1 =      0 
+    A2 =      1 
+    AT = 3.3e+004 
+    KETA =   0.04 
+    NSUB = 6e+016 
+    NDEP = 8.7e+018 
+    NSD = 2e+020 
+    NGATE = 1e+023 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-007 
+    K1 =    0.2 
+    KT1 = -0.154 
+    KT1L =      0 
+    KT2 =  0.022 
+    K2 =      0 
+    K3 =      0 
+    K3B =      0 
+    LPE0 =      0 
+    LPEB =      0 
+    DVTP0 = 1e-011 
+    DVTP1 =    0.1 
+    W0 = 2.5e-006 
+    DVT0 =      1 
+    DVT1 =      2 
+    DVT2 =      0 
+    DVT0W =      0 
+    DVT1W =      0 
+    DVT2W =      0 
+    DROUT =    0.5 
+    DSUB =  0.078 
+    VTH0 = 0.3558 
+    EU =   1.67 
+    UA = -5e-010 
+    UA1 = 1e-009 
+    UB = 1.7e-018 
+    UB1 = -1e-018 
+    UC =      0 
+    UC1 = -5.6e-011 
+    U0 = 0.0238 
+    UTE =   -1.1 
+    VOFF =  -0.13 
+    VOFFL =      0 
+    MINV =   0.05 
+    FPROUT =    0.2 
+    PDITS =   0.01 
+    PDITSD =   0.23 
+    PDITSL = 2.3e+006 
+    DELTA =   0.01 
+    RDSW =     80 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =     40 
+    RSW =     40 
+    PRWG =      0 
+    PRWB =      0 
+    PRT =      0 
+    ETA0 =  0.005 
+    ETAB =      0 
+    PCLM =   0.06 
+    PDIBLC1 =  0.001 
+    PDIBLC2 =  0.001 
+    PDIBLCB = -0.005 
+    PSCBE1 = 2e+009 
+    PSCBE2 = 1e-007 
+    PVAG = 1e-020 
+    WR =      1 
+    DWG =      0 
+    DWB =      0 
+    XW =      0 
+    XWREF =      0 
+    XL = -1.4e-008 
+    XLREF = -1.4e-008 
+    B0 =      0 
+    B1 =      0 
+    ALPHA0 =  0.074 
+    ALPHA1 =  0.005 
+    AGIDL = 0.0002 
+    BGIDL = 2.1e+009 
+    CGIDL = 0.0002 
+    PHIN =      0 
+    EGIDL =    0.8 
+    AIGC = 0.02001 
+    BIGC = 0.002743 
+    CIGC =  0.002 
+    AIGSD = 0.02001 
+    BIGSD = 0.002743 
+    CIGSD =  0.002 
+    AIGBACC =  0.012 
+    BIGBACC = 0.0028 
+    CIGBACC =  0.002 
+    AIGBINV =  0.014 
+    BIGBINV =  0.004 
+    CIGBINV =  0.004 
+    NIGC =      1 
+    NIGBINV =      3 
+    NIGBACC =      1 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =      1 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      5 
+    BETA0 =     30 
+    IJTHDFWD =    0.1 
+    IJTHSFWD =    0.1 
+    IJTHDREV =    0.1 
+    IJTHSREV =    0.1 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB = -1.058 
+    GBMIN = 1e-010 
+    RBDB =     15 
+    RBPB =      5 
+    RBSB =     15 
+    RBPS =     15 
+    RBPD =     15 
+    CGSL = 7.5e-013 
+    CGDL = 7.5e-013 
+    CKAPPAS =    0.6 
+    CKAPPAD =    0.6 
+    CF = 1.1e-010 
+    CLC = 1e-007 
+    CLE =    0.6 
+    DWC = 5e-009 
+    DLC = 1.95e-009 
+    DLCIG = 1.95e-009 
+    DWJ =      0 
+    VFBCV =     -1 
+    ACDE =      1 
+    MOIN =     15 
+    NOFF =      1 
+    VOFFCV =      0 
+    DMCG =      0 
+    DMCI =      0 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.4 
+    NGCON =      1 
+    TCJ =      0 
+    TPB =      0 
+    TCJSW =      0 
+    TPBSW =      0 
+    TCJSWG =      0 
+    TPBSWG =      0 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL = 2e-006 
+    SW = 2e-006 
+    K =      0 
+    TNOM =  300.1 
+    CGSO = 9e-011 
+    CGDO = 9e-011 
+    CGBO =      0 
+    XPART =      0 
+    RSH =      5 
+    JSS = 1.2e-006 
+    JSWS = 2.4e-013 
+    JSWGS = 2.4e-013 
+    PBS =      1 
+    MJS =    0.5 
+    PBSWS =      1 
+    MJSWS =   0.33 
+    CJS = 0.0018 
+    CJSWS = 1.2e-010 
+    NJS =      1 
+    PBSWGS =      1 
+    MJSWGS =   0.33 
+    CJSWGS = 2.1e-010 
+    XTIS =      3 
+    JSD = 1.2e-006 
+    JSWD = 2.4e-013 
+    JSWGD = 2.4e-013 
+    PBD =      1 
+    MJD =    0.5 
+    PBSWD =      1 
+    MJSWD =   0.33 
+    CJD = 0.0018 
+    CJSWD = 1.2e-010 
+    NJD =      1 
+    PBSWGD =      1 
+    MJSWGD =   0.33 
+    CJSWGD = 2.1e-010 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT = 1.95e-009 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =      0 
+    LMAX =      1 
+    WINT = 5e-009 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN =      0 
+    WMAX =      1 
+    NOIA = 6.25e+041 
+    NOIB = 3.125e+026 
+    NOIC = 8.75e+009 
+    EM = 4.1e+007 
+    EF =      1 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+ Model Name: pmos  
+ BSIM4 Model (Level 54)
+    MOBMOD = 0
+    BINUNIT = 1
+    PARAMCHK = 1
+    CAPMOD = 2
+    DIOMOD = 1
+    RDSMOD = 0
+    TRNQSMOD = 0
+    ACNQSMOD = 0
+    RBODYMOD = 1
+    RGATEMOD = 1
+    PERMOD = 1
+    GEOMOD = 1
+    RGEOMOD = 0
+    FNOIMOD = 1
+    TNOIMOD = 0
+    IGCMOD = 1
+    IGBMOD = 1
+    STIMOD = 0
+    VERSION =      4 
+    TOXREF = 7.7e-010 
+    TOXE = 7.7e-010 
+    TOXP = 5e-010 
+    TOXM = 7.7e-010 
+    DTOX = 2.7e-010 
+    EPSROX =    3.9 
+    CDSC =      0 
+    CDSCB =      0 
+    CDSCD =      0 
+    CIT =      0 
+    NFACTOR =    2.1 
+    XJ = 1.008e-008 
+    VSAT = 7.8e+004 
+    A0 =      1 
+    AGS = 1e-020 
+    A1 =      0 
+    A2 =      1 
+    AT = 3.3e+004 
+    KETA = -0.047 
+    NSUB = 6e+016 
+    NDEP = 3.5e+018 
+    NSD = 2e+020 
+    NGATE = 1e+023 
+    GAMMA1 =      0 
+    GAMMA2 =      0 
+    VBX =      0 
+    VBM =     -3 
+    XT = 1.55e-007 
+    K1 =    0.2 
+    KT1 =  -0.14 
+    KT1L =      0 
+    KT2 =  0.022 
+    K2 =  -0.01 
+    K3 =      0 
+    K3B =      0 
+    LPE0 =      0 
+    LPEB =      0 
+    DVTP0 = 1e-011 
+    DVTP1 =   0.05 
+    W0 = 2.5e-006 
+    DVT0 =      1 
+    DVT1 =      2 
+    DVT2 = -0.032 
+    DVT0W =      0 
+    DVT1W =      0 
+    DVT2W =      0 
+    DROUT =    0.6 
+    DSUB =    0.1 
+    VTH0 = -0.2412 
+    EU =      1 
+    UA = -5e-010 
+    UA1 = 1e-009 
+    UB = 1.6e-018 
+    UB1 = -1e-018 
+    UC =      0 
+    UC1 = -5.6e-011 
+    U0 = 0.00306 
+    UTE =   -1.1 
+    VOFF =  -0.13 
+    VOFFL =      0 
+    MINV =   0.05 
+    FPROUT =    0.2 
+    PDITS =   0.08 
+    PDITSD =   0.23 
+    PDITSL = 2.3e+006 
+    DELTA =   0.01 
+    RDSW =     80 
+    RDSWMIN =      0 
+    RDWMIN =      0 
+    RSWMIN =      0 
+    RDW =     40 
+    RSW =     40 
+    PRWG =      0 
+    PRWB =      0 
+    PRT =      0 
+    ETA0 = 0.0042 
+    ETAB =      0 
+    PCLM =    0.1 
+    PDIBLC1 =  0.001 
+    PDIBLC2 =  0.001 
+    PDIBLCB = 3.4e-008 
+    PSCBE1 = 2e+009 
+    PSCBE2 = 9.58e-007 
+    PVAG = 1e-020 
+    WR =      1 
+    DWG =      0 
+    DWB =      0 
+    XW =      0 
+    XWREF =      0 
+    XL = -1.4e-008 
+    XLREF = -1.4e-008 
+    B0 =      0 
+    B1 =      0 
+    ALPHA0 =  0.074 
+    ALPHA1 =  0.005 
+    AGIDL = 0.0002 
+    BGIDL = 2.1e+009 
+    CGIDL = 0.0002 
+    PHIN =      0 
+    EGIDL =    0.8 
+    AIGC = 0.01194 
+    BIGC = 0.001222 
+    CIGC = 0.0008 
+    AIGSD = 0.01194 
+    BIGSD = 0.001222 
+    CIGSD = 0.0008 
+    AIGBACC =  0.012 
+    BIGBACC = 0.0028 
+    CIGBACC =  0.002 
+    AIGBINV =  0.014 
+    BIGBINV =  0.004 
+    CIGBINV =  0.004 
+    NIGC =      1 
+    NIGBINV =      3 
+    NIGBACC =      1 
+    NTOX =      1 
+    EIGBINV =    1.1 
+    PIGCD =      1 
+    POXEDGE =      1 
+    XRCRG1 =     12 
+    TNOIA =    1.5 
+    TNOIB =    3.5 
+    NTNOI =      1 
+    XRCRG2 =      5 
+    BETA0 =     30 
+    IJTHDFWD =    0.1 
+    IJTHSFWD =    0.1 
+    IJTHDREV =    0.1 
+    IJTHSREV =    0.1 
+    XJBVD =      1 
+    XJBVS =      1 
+    BVD =     10 
+    BVS =     10 
+    VFB = -1.058 
+    GBMIN = 1e-012 
+    RBDB =     50 
+    RBPB =     50 
+    RBSB =     50 
+    RBPS =     50 
+    RBPD =     50 
+    CGSL = 3e-011 
+    CGDL = 3e-011 
+    CKAPPAS =    0.6 
+    CKAPPAD =    0.6 
+    CF = 1.1e-010 
+    CLC = 1e-007 
+    CLE =    0.6 
+    DWC = 5e-009 
+    DLC = 1.95e-009 
+    DLCIG = 1.95e-009 
+    DWJ = 5e-009 
+    VFBCV =     -1 
+    ACDE =      1 
+    MOIN =     15 
+    NOFF =      1 
+    VOFFCV =      0 
+    DMCG =      0 
+    DMCI =      0 
+    DMDG =      0 
+    DMCGT =      0 
+    XGW =      0 
+    XGL =      0 
+    RSHG =    0.1 
+    NGCON =      1 
+    TCJ =      0 
+    TPB =      0 
+    TCJSW =      0 
+    TPBSW =      0 
+    TCJSWG =      0 
+    TPBSWG =      0 
+    SK0 =      0 
+    SK1 =      0 
+    SK2 =      0 
+    SL = 2e-006 
+    SW = 2e-006 
+    K =      0 
+    TNOM =  300.1 
+    CGSO = 9e-011 
+    CGDO = 9e-011 
+    CGBO =      0 
+    XPART =      0 
+    RSH =      5 
+    JSS = 2e-007 
+    JSWS = 4e-013 
+    JSWGS = 4e-013 
+    PBS =      1 
+    MJS =    0.5 
+    PBSWS =      1 
+    MJSWS =   0.33 
+    CJS = 0.0015 
+    CJSWS = 9.4e-011 
+    NJS =      1 
+    PBSWGS =      1 
+    MJSWGS =   0.33 
+    CJSWGS = 2e-010 
+    XTIS =      3 
+    JSD = 2e-007 
+    JSWD = 4e-013 
+    JSWGD = 4e-013 
+    PBD =      1 
+    MJD =    0.5 
+    PBSWD =      1 
+    MJSWD =   0.33 
+    CJD = 0.0015 
+    CJSWD = 9.4e-011 
+    NJD =      1 
+    PBSWGD =      1 
+    MJSWGD =   0.33 
+    CJSWGD = 2e-010 
+    XTID =      3 
+    LMLT =      1 
+    WMLT =      1 
+    LINT = 1.95e-009 
+    LL =      0 
+    LLC =      0 
+    LLN =      1 
+    LW =      0 
+    LWC =      0 
+    LWN =      1 
+    LWL =      0 
+    LWLC =      0 
+    LMIN =      0 
+    LMAX =      1 
+    WINT = 5e-009 
+    WL =      0 
+    WLC =      0 
+    WLN =      1 
+    WW =      0 
+    WWC =      0 
+    WWN =      1 
+    WWL =      0 
+    WWLC =      0 
+    WMIN =      0 
+    WMAX =      1 
+    NOIA = 6.25e+041 
+    NOIB = 3.125e+026 
+    NOIC = 8.75e+009 
+    EM = 4.1e+007 
+    EF =      1 
+    AF =      1 
+    KF =      0 
+    TRS =      0 
+    TRD =      0 
+  **info** (snm-read-2.sp:25) DC voltage reset to initial transient source value              in source        0:vwl                 new dc=  0.1000D+01
+ **warning**(nmos:mnl)Warning:  Acde = 0.218967 may be too small in BSIM4 model with w=7.2e-008 l=3.2e-008.
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ *calculate snm
+
+  ******  circuit element summary tnom=  25.000 temp=  25.000 *****
+
+
+ **** capacitors
+  
+  
+                                        
+ element name        0:cblb     0:cbl   
+ node1               0:blb      0:bl    
+ node2               0:0        0:0     
+ model                                  
+ cap eff             1.0000p    1.0000p 
+ tc1                 0.         0.      
+ tc2                 0.         0.      
+ scale               1.0000     1.0000  
+ ic                  0.         0.      
+ m                   1.0000     1.0000  
+ w                   0.         0.      
+ l                   0.         0.      
+ temp               25.0000    25.0000  
+
+
+ **** voltage-controlled voltage sources
+      name        +             -          dimension  function  scale
+        0:eq              0:q               0:0              1      poly       1.    
+        0:eqb             0:qb              0:0              1      poly       1.    
+        0:ev1             0:v1              0:0              1      poly       1.    
+        0:ev2             0:v2              0:0              1      poly       1.    
+        0:evd             0:vd              0:0              2      poly       1.    
+
+
+ **** independent sources
+
+     name         node1        node2      dc volt    ac mag    ac phase    type
+  vvdd  vdd               0                  900.0000m    0.         0.      dc   
+  vwl  wl                0                    1.0000     0.         0.      pulse
+             initial value     1.0000 
+             pulsed value.     0.     
+             delay time...     0.     
+             risetime.....     1.0000n
+             falltime.....     1.0000n
+             width........    30.0000n
+             period.......     1.2000u
+
+
+
+ **** mosfets
+
+
+ **** BSIM4 Model (Level 54)
+  
+  
+                                                              
+ element name        0:mpl      0:mnl      0:mpr      0:mnr   
+ drain               0:qd       0:qd       0:qbd      0:qbd   
+ gate                0:qb       0:qb       0:q        0:q     
+ source              0:vdd      0:0        0:vdd      0:0     
+ bulk                0:vdd      0:0        0:vdd      0:0     
+ model               0:pmos     0:nmos     0:pmos     0:nmos  
+ w eff              22.0000n   62.0000n   22.0000n   62.0000n 
+ l eff              14.1000n   14.1000n   14.1000n   14.1000n 
+ rd eff              0.         0.         0.         0.      
+ rs eff              0.         0.         0.         0.      
+ cdsat              10.0000f   10.0000f   10.0000f   10.0000f 
+ cssat             1.265e-20  2.485e-20  1.265e-20  2.485e-20 
+ capbd               4.4000a   15.1200a    4.4000a   15.1200a 
+ capbs               6.4680a   23.7600a    6.4680a   23.7600a 
+ temp               25.0000    25.0000    25.0000    25.0000  
+ aic                                                          
+ nf                  1.0000     1.0000     1.0000     1.0000  
+ min                 0.         0.         0.         0.      
+ rbdb               50.0000    15.0000    50.0000    15.0000  
+ rbsb               50.0000    15.0000    50.0000    15.0000  
+ rbpb               50.0000     5.0000    50.0000     5.0000  
+ rbps               50.0000    15.0000    50.0000    15.0000  
+ rbpd               50.0000    15.0000    50.0000    15.0000  
+ trnqsmod            0.         0.         0.         0.      
+ acnqsmod            0.         0.         0.         0.      
+ rbodymod            1.0000     1.0000     1.0000     1.0000  
+ rgatemod            1.0000     1.0000     1.0000     1.0000  
+ geomod              1.0000     1.0000     1.0000     1.0000  
+ rgeomod             0.         0.         0.         0.      
+ delvto              9.1122m    0.         9.1122m    0.      
+ mulu0               1.0000     1.0000     1.0000     1.0000  
+ delk1               0.         0.         0.         0.      
+ delnfct             0.         0.         0.         0.      
+ deltox              0.         0.         0.         0.      
+ sa                  0.         0.         0.         0.      
+ sb                  0.         0.         0.         0.      
+ sd                  0.         0.         0.         0.      
+ saeff               0.         0.         0.         0.      
+ sbeff               0.         0.         0.         0.      
+  
+  
+                                        
+ element name        0:mal      0:mar   
+ drain               0:blb      0:bl    
+ gate                0:wl       0:wl    
+ source              0:qbd      0:qd    
+ bulk                0:0        0:0     
+ model               0:nmos     0:nmos  
+ w eff              26.0000n   26.0000n 
+ l eff              14.1000n   14.1000n 
+ rd eff              0.         0.      
+ rs eff              0.         0.      
+ cdsat              10.0000f   10.0000f 
+ cssat             1.242e-20  1.242e-20 
+ capbd               7.5600a    7.5600a 
+ capbs              11.8800a   11.8800a 
+ temp               25.0000    25.0000  
+ aic                                    
+ nf                  1.0000     1.0000  
+ min                 0.         0.      
+ rbdb               15.0000    15.0000  
+ rbsb               15.0000    15.0000  
+ rbpb                5.0000     5.0000  
+ rbps               15.0000    15.0000  
+ rbpd               15.0000    15.0000  
+ trnqsmod            0.         0.      
+ acnqsmod            0.         0.      
+ rbodymod            1.0000     1.0000  
+ rgatemod            1.0000     1.0000  
+ geomod              1.0000     1.0000  
+ rgeomod             0.         0.      
+ delvto              0.         0.      
+ mulu0               1.0000     1.0000  
+ delk1               0.         0.      
+ delnfct             0.         0.      
+ deltox              0.         0.      
+ sa                  0.         0.      
+ sb                  0.         0.      
+ sd                  0.         0.      
+ saeff               0.         0.      
+ sbeff               0.         0.      
+  
+  
+
+ **warning** the following singular supplies were terminated to 1 meg resistor 
+   supply       node1            node2
+  evd                     0:vd               defined in subckt 0                     0:0                defined in subckt 0               
+      
+ *****************************************************************
+ ******  option summary
+ ******
+ runlvl  = 3         bypass  = 2         
+ ******  
+ *calculate snm
+
+  ******  dc transfer curves tnom=  25.000 temp=  25.000 *****
+x
+
+      u         voltage      voltage    
+                    qb           qbd    
+ -636.39610m      1.0411     899.4411m  
+ -626.39610m      1.0273     899.3133m  
+ -616.39610m      1.0137     899.1248m  
+ -606.39610m      1.0000     898.8523m  
+ -596.39610m    986.4361m    898.4649m  
+ -586.39610m    972.8709m    897.9233m  
+ -576.39610m    959.3463m    897.1792m  
+ -566.39610m    945.8651m    896.1762m  
+ -556.39610m    932.4304m    894.8517m  
+ -546.39610m    919.0459m    893.1412m  
+ -536.39610m    905.7154m    890.9835m  
+ -526.39610m    892.4434m    888.3261m  
+ -516.39610m    879.2347m    885.1305m  
+ -506.39610m    866.0947m    881.3744m  
+ -496.39610m    853.0298m    877.0523m  
+ -486.39610m    840.0469m    872.1734m  
+ -476.39610m    827.1539m    866.7587m  
+ -466.39610m    814.3597m    860.8371m  
+ -456.39610m    801.6744m    854.4421m  
+ -446.39610m    789.1092m    847.6089m  
+ -436.39610m    776.6767m    840.3726m  
+ -426.39610m    764.3903m    832.7668m  
+ -416.39610m    752.2650m    824.8227m  
+ -406.39610m    740.3161m    816.5693m  
+ -396.39610m    728.5598m    808.0327m  
+ -386.39610m    717.0126m    799.2368m  
+ -376.39610m    705.6910m    790.2032m  
+ -366.39610m    694.6117m    780.9517m  
+ -356.39610m    683.7913m    771.5010m  
+ -346.39610m    673.2460m    761.8687m  
+ -336.39610m    662.9922m    752.0717m  
+ -326.39610m    653.0457m    742.1274m  
+ -316.39610m    643.4212m    732.0535m  
+ -306.39610m    634.1318m    721.8689m  
+ -296.39610m    625.1876m    711.5941m  
+ -286.39610m    616.5936m    701.2520m  
+ -276.39610m    608.3484m    690.8677m  
+ -266.39610m    600.4418m    680.4685m  
+ -256.39610m    592.8547m    670.0840m  
+ -246.39610m    585.5600m    659.7443m  
+ -236.39610m    578.5248m    649.4789m  
+ -226.39610m    571.7138m    639.3145m  
+ -216.39610m    565.0922m    629.2730m  
+ -206.39610m    558.6283m    619.3706m  
+ -196.39610m    552.2944m    609.6167m  
+ -186.39610m    546.0672m    600.0141m  
+ -176.39610m    539.9275m    590.5602m  
+ -166.39610m    533.8598m    581.2479m  
+ -156.39610m    527.8514m    572.0673m  
+ -146.39610m    521.8921m    563.0063m  
+ -136.39610m    515.9738m    554.0519m  
+ -126.39610m    510.0896m    545.1911m  
+ -116.39610m    504.2339m    536.4112m  
+ -106.39610m    498.4023m    527.7002m  
+  -96.39610m    492.5909m    519.0473m  
+  -86.39610m    486.7964m    510.4427m  
+  -76.39610m    481.0163m    501.8778m  
+  -66.39610m    475.2482m    493.3452m  
+  -56.39610m    469.4904m    484.8389m  
+  -46.39610m    463.7414m    476.3535m  
+  -36.39610m    457.9999m    467.8849m  
+  -26.39610m    452.2652m    459.4296m  
+  -16.39610m    446.5368m    450.9851m  
+   -6.39610m    440.8145m    442.5494m  
+    3.60390m    435.0987m    434.1212m  
+   13.60390m    429.3901m    425.6996m  
+   23.60390m    423.6898m    417.2841m  
+   33.60390m    417.9997m    408.8749m  
+   43.60390m    412.3221m    400.4723m  
+   53.60390m    406.6603m    392.0770m  
+   63.60390m    401.0182m    383.6901m  
+   73.60390m    395.4007m    375.3130m  
+   83.60390m    389.8137m    366.9474m  
+   93.60390m    384.2643m    358.5954m  
+  103.60390m    378.7607m    350.2597m  
+  113.60390m    373.3123m    341.9432m  
+  123.60390m    367.9297m    333.6496m  
+  133.60390m    362.6245m    325.3832m  
+  143.60390m    357.4093m    317.1492m  
+  153.60390m    352.2971m    308.9542m  
+  163.60390m    347.3009m    300.8058m  
+  173.60390m    342.4331m    292.7136m  
+  183.60390m    337.7045m    284.6897m  
+  193.60390m    333.1230m    276.7485m  
+  203.60390m    328.6926m    268.9083m  
+  213.60390m    324.4120m    261.1912m  
+  223.60390m    320.2738m    253.6236m  
+  233.60390m    316.2638m    246.2362m  
+  243.60390m    312.3614m    239.0631m  
+  253.60390m    308.5411m    232.1397m  
+  263.60390m    304.7740m    225.5000m  
+  273.60390m    301.0299m    219.1729m  
+  283.60390m    297.2792m    213.1801m  
+  293.60390m    293.4936m    207.5340m  
+  303.60390m    289.6473m    202.2386m  
+  313.60390m    285.7171m    197.2903m  
+  323.60390m    281.6818m    192.6803m  
+  333.60390m    277.5220m    188.3962m  
+  343.60390m    273.2197m    184.4237m  
+  353.60390m    268.7576m    180.7470m  
+  363.60390m    264.1186m    177.3501m  
+  373.60390m    259.2854m    174.2167m  
+  383.60390m    254.2396m    171.3301m  
+  393.60390m    248.9619m    168.6739m  
+  403.60390m    243.4311m    166.2313m  
+  413.60390m    237.6239m    163.9859m  
+  423.60390m    231.5150m    161.9215m  
+  433.60390m    225.0762m    160.0222m  
+  443.60390m    218.2768m    158.2732m  
+  453.60390m    211.0839m    156.6606m  
+  463.60390m    203.4627m    155.1714m  
+  473.60390m    195.3779m    153.7941m  
+  483.60390m    186.7951m    152.5183m  
+  493.60390m    177.6840m    151.3348m  
+  503.60390m    168.0210m    150.2354m  
+  513.60390m    157.7931m    149.2129m  
+  523.60390m    147.0016m    148.2609m  
+  533.60390m    135.6638m    147.3737m  
+  543.60390m    123.8142m    146.5462m  
+  553.60390m    111.5016m    145.7739m  
+  563.60390m     98.7852m    145.0527m  
+  573.60390m     85.7294m    144.3792m  
+  583.60390m     72.3976m    143.7499m  
+  593.60390m     58.8484m    143.1618m  
+  603.60390m     45.1324m    142.6124m  
+  613.60390m     31.2914m    142.0990m  
+  623.60390m     17.3586m    141.6195m  
+  633.60390m      3.3592m    141.1718m  
+y
+-----------------------------------------------
+ maxvd= 200.2683m    at=-636.3961m
+             from=-636.3961m    to= 633.6039m
+ snm= 141.6111m
+
+          ***** job concluded
+1****** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******               
+ ******  
+ *calculate snm
+
+  ******  job statistics summary tnom=  25.000 temp=  25.000 *****
+
+  ******  HSPICE Threads Information  ******
+
+  Command Line Threads Count :     1
+  Available CPU Count        :     4
+  Actual Threads Count       :     1
+
+
+  ******  Circuit Statistics  ******
+  # nodes       =      36 # elements   =      16
+  # resistors   =       1 # capacitors =       2 # inductors   =       0
+  # mutual_inds =       0 # vccs       =       0 # vcvs        =       5
+  # cccs        =       0 # ccvs       =       0 # volt_srcs   =       2
+  # curr_srcs   =       0 # diodes     =       0 # bjts        =       0
+  # jfets       =       0 # mosfets    =       6 # U elements  =       0
+  # T elements  =       0 # W elements =       0 # B elements  =       0
+  # S elements  =       0 # P elements =       0 # va device   =       0
+  # vector_srcs =       0 # N elements =       0
+
+
+  ******  Runtime Statistics (seconds)  ******
+
+  analysis           time    # points   tot. iter  conv.iter
+  op point           0.00           1           0
+  dc sweep           0.03         128         330
+  readin             0.09
+  errchk             0.02
+  setup              0.02
+  output             0.00
+
+
+           peak memory used         47.86 megabytes
+           total cpu time            0.18 seconds
+           total elapsed time        2.34 seconds
+           job started at     16:32:20 02/16/2018
+           job ended   at     16:32:22 02/16/2018
+
+
+  lic: Release hspice token(s) 
+ lic: total license checkout elapse time:        2.15(s)

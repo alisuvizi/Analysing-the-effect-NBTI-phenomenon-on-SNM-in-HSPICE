@@ -1,0 +1,38 @@
+ ** $DATA1 SOURCE='HSPICE' VERSION='G-2012.06-SP1 32-BIT'
+ ******Result of Reliability Analysis******
+
+Circuit time  8.640000E+04
+
+mpl
+Device Type: PMOS
+L=  3.200000E-08
+W=  3.200000E-08
+M=  1.000000E+00
+Bias Direction: forward
+delvth0     =  9.11638303101300E-03
+mulu0       =   100.00000000000000%
+mulua       =   100.00000000000000%
+mulub       =   100.00000000000000%
+muluc       =   100.00000000000000%
+mulvsat     =   100.00000000000000%
+delk2       =  0.00000000000000E+000
+deleta0     =  0.00000000000000E+000
+delnfactor  =  0.00000000000000E+000
+mulrdsw     =   100.00000000000000%
+
+mpr
+Device Type: PMOS
+L=  3.200000E-08
+W=  3.200000E-08
+M=  1.000000E+00
+Bias Direction: forward
+delvth0     =  9.11638303101300E-03
+mulu0       =   100.00000000000000%
+mulua       =   100.00000000000000%
+mulub       =   100.00000000000000%
+muluc       =   100.00000000000000%
+mulvsat     =   100.00000000000000%
+delk2       =  0.00000000000000E+000
+deleta0     =  0.00000000000000E+000
+delnfactor  =  0.00000000000000E+000
+mulrdsw     =   100.00000000000000%

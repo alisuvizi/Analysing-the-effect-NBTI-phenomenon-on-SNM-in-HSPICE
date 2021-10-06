@@ -1,0 +1,4 @@
+$DATA1 SOURCE='HSPICE' VERSION='G-2012.06-SP1 32-BIT'
+.TITLE '*calculate snm'
+ maxvd            snm              temper           alter#            
+    0.7639           0.5402          25.0000        1                 

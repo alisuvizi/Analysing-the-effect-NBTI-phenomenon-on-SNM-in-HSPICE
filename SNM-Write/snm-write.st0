@@ -1,0 +1,45 @@
+***** HSPICE -- G-2012.06-SP1 32-BIT (Aug 27 2012) win32 ******
+ Input File: snm-write.sp
+ lic:
+ lic: FLEXlm: v10.9.8
+ lic: USER:   Amir Houseen         HOSTNAME: samir
+ lic: HOSTID: "086266dc910a 00ff5638fd5e 005056c00001 005056c00008 0a002700002f d0534931e432 d253493
+ lic: Using FLEXlm license file:
+ lic: 27000@samir
+ lic: Checkout 1 hspice
+ lic: License/Maintenance for hspice will expire on 31-dec-2019/2019.12
+ lic: NODE LOCKED license on hostid "086266dc910a 00ff5638fd5e 005056c00001 005056c00008 0a002700002
+ lic:
+ init: begin read circuit files,  cpu clock=  2.04E+00
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\behave\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\behave\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\AD\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\XILINX\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\TLINE\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\TI\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\SIGNET\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\PCI\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\LIN_TECH\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\FET\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\DIO\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\COMLINE\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\BURR_BRN\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\BJT\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\behave\
+       option search = C:\synopsys\Hspice_G-2012.06-SP1\PARTS\AD\
+       option post =     2.00
+       option runlvl
+       option list
+       option post
+ init: end read circuit files,  cpu clock=  2.12E+00 peak memory=        46 mb
+ init: begin check errors,  cpu clock=  2.12E+00
+ init: end check errors,  cpu clock=  2.14E+00 peak memory=        46 mb
+ init: begin setup matrix, pivot=     0 cpu clock=  2.14E+00
+       establish matrix -- done,  cpu clock=  2.15E+00 peak memory=        46 mb
+       re-order matrix -- done,  cpu clock=  2.17E+00 peak memory=        46 mb
+ init: end setup matrix,  cpu clock=  2.18E+00 peak memory=        46 mb
+ output: snm-write.ms0
+ sweep: dc dc0    begin, #sweeps= 128 cpu clock=  2.20E+00
+ sweep: dc dc0    end,  cpu clock=  2.23E+00 peak memory=        47 mb
+>info:         ***** hspice job concluded
+ lic: Release hspice token(s)
